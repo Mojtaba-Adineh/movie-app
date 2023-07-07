@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchTrendingMovies } from '../../features/trendingMoviesSlice';
 import { Container } from 'reactstrap';
 import MovieSlider from './slider/MovieSlider';
@@ -11,6 +11,14 @@ import PopularAnimations from './popular-animations/PopularAnimations';
 import Helmet from '../../common/helmet/Helmet';
 
 const Home = () => {
+    const error = useSelector(state => state.trendingMovies.error)
+
+    useEffect(() => {
+        if(error){
+            window.alert(error)
+        }
+    },[error])
+
     return (
         <Helmet title="Home">
             <div className='home'>
