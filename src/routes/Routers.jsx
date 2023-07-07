@@ -2,7 +2,7 @@ import React from 'react';
 import {Routes , Route , Navigate } from "react-router-dom"
 import Home from '../components/home/Home';
 import Movies from '../components/movies/Movies';
-import Contact from '../components/contact/contact';
+import Contact from '../components/contact/Contact';
 import Login from '../components/login/Login';
 import Register from '../components/register/Register';
 import NotFound from '../components/notFound/NotFound';
