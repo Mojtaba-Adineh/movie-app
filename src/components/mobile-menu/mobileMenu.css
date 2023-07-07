@@ -1,0 +1,40 @@
+.mobileMenu-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(70, 70, 70, 0.804);
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    transition: all 1s ease;
+}
+
+.mobileMenu-container.active{
+    right: 0;
+}
+
+.mobile-menu{
+    z-index: 5;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: #082032;
+    top: 0;
+    right: -250px;
+    transition: all 1s ease ;
+}
+
+.mobile-menu.active{
+    right: 0px;
+}
+
+.mobile-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .4s ease;
+}
+
+.mobile-menu a:hover{
+    color: #F9A826;
+}

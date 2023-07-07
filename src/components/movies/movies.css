@@ -1,0 +1,128 @@
+.allMovies{
+    background: #2C394B;
+}
+
+.allMovies input, .allMovies select{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.allMovies input:focus{
+    outline: none;
+}
+
+.search-box{
+    border-bottom: 1px solid #F9A826;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.search-box span{
+    color: #F9A826;
+    cursor: pointer;
+}
+
+.allMovies select{
+    border-bottom: #F9A826 1px solid;
+    padding: 10px;
+    outline: none;
+}
+
+.allMovies select *{
+    background: #082032;
+    padding: 10px !important;
+}
+
+.movie-item{
+    width: 180px;
+    height: 280px;
+}
+
+.movie-item img{
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* pagination btns */
+
+.paginationBtns{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin: 2rem auto 0;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.paginationBtns a{
+    text-decoration: none;
+    background-color: #212245 ;
+    color: #fff !important;
+    padding: 5px 13px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    font-size: 1.1rem;
+}
+
+.paginationBtns a:hover{
+    transform: scale(1.1);
+}
+
+.active-page a{
+    background-color: #F9A826 !important;
+}
+
+.next a , .previous a{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+    .movie-item{
+        width: 150px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .search-box{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .movie-item{
+        width: 130px;
+        height: 230px;
+    }
+
+    .search-box{
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    .allMovies select{
+        font-size: .9remw;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .movie-item{
+        width: 110px;
+        height: 210px;
+    }
+
+    .paginationBtns a{
+        font-size: .8rem;
+    }
+}

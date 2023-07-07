@@ -1,0 +1,146 @@
+.popular-text{
+    font-size: 20px;
+}
+
+.popular-slider{
+    border-radius: 10px;
+}
+
+.popular-text span{
+    color: #F9A826;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.each-movie img{
+    width: 190px;
+    height: 290px;
+    border-radius: 10px;
+}
+
+.each-movie{
+    position: relative;
+}
+
+.swiper-slide:hover{
+    cursor: pointer;
+}   
+
+.arrow-btn{
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    cursor: pointer;
+    box-shadow: 0 0 30px -10px whitesmoke;
+    transition: all .6s ease;
+}
+
+.arrow-btn:hover{
+    box-shadow: 0 0 40px -5px whitesmoke;
+}
+
+.arrow-btn i{
+    font-size: 20px;
+}
+.popular-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.movie-card-rate{
+    background-color: #082032;
+    position: absolute;
+    z-index: 10;
+    bottom: 1px;
+    right: 3%;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.movie-card-rate p{
+    font-weight: 600;
+    margin: 0;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+@media only screen and (min-width : 1300px){
+    .popular-movies,.popular-animations,.popular-series,.similar-movies{
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width:1120px){
+    .each-movie img{
+        width: 160px;
+        height: 260px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .each-movie img{
+        width: 120px;
+        height: 190px;
+    }
+
+    .popular-text{
+        padding-left: 10px;
+        font-size: 15px ;
+    }
+
+    .popular-text span{
+        font-size: 18px;
+    }
+
+    .arrow-btn{
+        width: 30px;
+        height: 30px;
+    }
+
+    .arrow-btn i{
+        font-size: 14px;
+    }
+
+    .movie-card-rate p{
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    div.container-fluid{
+        padding: 0;
+        margin: 0;
+    }
+
+    .each-movie img{
+        width: 90px;
+        height: 130px;
+    }
+
+    .popular-text{
+        font-size: 15px ;
+    }
+
+    .popular-text span{
+        font-size: 18px;
+    }
+
+    .arrow-btn{
+        width: 30px;
+        height: 30px;
+    }
+
+    .arrow-btn i{
+        font-size: 14px;
+    }
+}
+

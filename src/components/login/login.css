@@ -1,0 +1,85 @@
+.login{
+    position: relative;
+    height: 100vh;
+    background-image: url(../../assets/images/netflixteaser.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.login-overlap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(57, 57, 57, 0.2));
+}
+
+.formGroup{
+    margin-bottom: 20px;
+}
+
+.formGroup input{
+    outline: none;
+    border: none;
+    width: 65%;
+    height: 45px;
+    border-radius: 40px;
+    padding:  0 15px;
+    transition: all .4s ease-in-out;
+}
+
+.formGroup input:focus{
+    box-shadow: 0 0 10px 1px #F9A826;
+}
+
+.login-submit{
+    width: 65%;
+    height: 45px;
+    border-radius: 40px;
+    background: #F9A826;
+    margin-bottom: 20px;
+    border: none;
+    transition: all .4s ease;
+}
+
+.login-submit:hover , .login-submit:focus{
+    outline: none;
+    box-shadow: 0 10px 25px -5px white;
+}
+
+.login-title{
+    display: flex;
+}
+
+.login-title p{
+    color: #fff;
+    padding: 0 20px;
+}
+
+.login-title a{
+    color: #F9A826;
+}
+
+.error-message{
+    margin-top: 2px;
+    padding: 0 10px;
+    font-size: 13px;
+    color: red;
+}
+
+@media only screen and (max-width: 576px) {
+    .formGroup input, .login-submit{
+        width: 100%;
+        height: 30px;
+    }
+
+    .login-title{
+        font-size: 12px;
+    }
+
+    .error-message{
+        font-size: 10px;
+    }
+}

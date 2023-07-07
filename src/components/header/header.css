@@ -1,0 +1,108 @@
+.nav-container{
+    height: 100px;
+    background: #082032;
+}
+
+.navbar{
+    width: 60%;
+}
+
+.logo{
+    width: 100px ;
+}
+
+.nav-items a, .user a{
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease;
+    margin: 0 40px;
+}
+
+.nav-items a:hover{
+    color: #F9A826;
+}
+
+.user i{
+    transition: all .3s ease;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 20px;
+}
+
+.user i:hover{
+    border-color: #F9A826;
+    color: #F9A826;
+}
+
+.nav-item-active{
+    color: #F9A826 !important;
+}
+
+.user-active i{
+    color: #F9A826 !important;
+    border-color: #F9A826 !important;
+}
+
+.mobileMenu-button{
+    display: none;
+    position: absolute;
+    top: 25px;
+    z-index: 6;
+}
+
+.mobileMenu-button span{
+    transform-origin: left;
+    transition: 1s all ease;
+}
+
+.mobileMenu-button.active .line1{
+    transform: rotate(45deg);
+}
+
+.mobileMenu-button.active .line3{
+    transform: rotate(-45deg);
+}
+
+.mobileMenu-button.active .line2{
+    opacity: 0;
+}
+
+@media only screen and (max-width: 768px){
+    .nav-items a, .user a{
+        display: none;
+    }
+
+    .mobileMenu-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 27px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .mobileMenu-button span{
+        z-index: 5;
+        background-color: white;
+        height: .5px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .logo{
+        width: 70px;
+    }
+
+    .nav-items a, .user a{
+        font-size: 14px;
+        margin: 0 30px;
+    }
+
+    .user i{
+        font-size: 14px;
+    }
+}
+

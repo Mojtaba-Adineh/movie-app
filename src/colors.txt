@@ -1,0 +1,4 @@
+yellow : #F9A826
+base dark blue : #082032
+base dark gray : #2C394B 
+base dark gray2 : #334756

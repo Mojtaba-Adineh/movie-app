@@ -1,0 +1,208 @@
+.movie-detail{
+    height: 100vh;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-color: #686868 !important;
+    background-blend-mode: multiply !important;
+}
+
+.img-container{
+    width: 300px;
+    height: 450px;
+    border: 4px solid #F9A826;
+    border-radius: 10px;
+}
+
+.img-container img{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.movie-detail-title{
+    font-weight: bold;
+}
+
+.movie-info p, .overView {
+    color: #F9A826;
+    font-weight: bold;
+}
+
+.movie-info p span, .overView span {
+    color: #fff;
+}
+
+.vote-number{
+    margin: 0;
+    font-size: 18px;
+}
+
+.vote-number span{
+    font-size: 25px;
+    color: #F9A826;
+    font-weight: 600;
+}
+
+.movie-detail-imdb p{
+    padding: 3px 8px;
+    font-size: 15px;
+    background-color: #F9A826;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.similarMovies-section{
+    background: #2C394B;
+}
+
+@media only screen and (max-width : 576px) {
+    .movie-detail{
+        height: 100%;
+    }
+
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-container{
+        width:170px;
+        height: 280px;
+    }
+
+    .img-container img{
+        width: 170px;
+        height: 280px;
+    }
+
+    .movie-detail-title{
+        font-size: .9rem;
+    }
+
+    .vote-number{
+        font-size: 11px;
+    }
+
+    .vote-number span{
+        font-size: 13px;
+    }
+
+    .movie-detail-imdb p{
+        font-size: 9px;
+    }
+
+    .movie-detail-imdb{
+        font-size: 9px;
+    }
+
+    .movie-info , .overView{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width : 576px) and (max-width : 768px) {
+    .img-container{
+        width:180px;
+        height: 300px;
+    }
+
+    .img-container img{
+        width: 180px;
+        height: 300px;
+    }
+
+    .movie-detail-title{
+        font-size: 1rem;
+    }
+
+    .vote-number{
+        font-size: 12px;
+    }
+
+    .vote-number span{
+        font-size: 15px;
+    }
+
+    .movie-detail-imdb p{
+        font-size: 10px;
+    }
+
+    .movie-detail-imdb{
+        font-size: 10px;
+    }
+
+    .movie-info , .overView{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+    .img-container{
+        width: 200px;
+        height: 350px;
+    }
+
+    .img-container img{
+        width: 200px;
+        height: 350px;
+    }
+
+    .movie-detail-title{
+        font-size: 1.2rem;
+    }
+
+    .vote-number{
+        font-size: 14px;
+    }
+
+    .vote-number span{
+        font-size: 18px;
+    }
+
+    .movie-detail-imdb p{
+        font-size: 12px;
+    }
+
+    .movie-detail-imdb{
+        font-size: 12px;
+    }
+
+    .movie-info , .overView{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1200px) {
+    .img-container{
+        width: 250px;
+        height: 400px;
+    }
+
+    .img-container img{
+        width: 250px;
+        height: 400px;
+    }
+
+    .movie-detail-title{
+        font-size: 1.6rem;
+    }
+
+    .vote-number{
+        font-size: 16px;
+    }
+
+    .vote-number span{
+        font-size: 20px;
+    }
+
+    .movie-detail-imdb p{
+        font-size: 13px;
+    }
+
+    .movie-detail-imdb{
+        font-size: 13px;
+    }
+}
+

@@ -1,0 +1,83 @@
+.footer{
+    background: #082032;
+    padding-bottom: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+.footer-link{
+    text-decoration: underline;
+    color: #fff;
+    border-radius: 20px; 
+    transition: all .4s ease;
+}
+
+.footer-link:hover{
+    color: #F9A826;
+}
+
+.footer-signUp h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-signUp-btn{
+    padding: 7px 100px;
+    border-radius: 25px;
+    background: #F9A826;
+    color: #082032;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+
+.footer-signUp-btn:hover{
+    padding: 7px 40px;
+}
+
+.footer-signUp-btn span{
+    margin-left: 5px;
+}
+
+.footer-signUp-btn i{
+    font-size: 20px;
+}
+
+
+.rights-text{
+    font-size: 15px;
+    color: #FF4C29;
+}
+
+.social-media a{
+   text-decoration: none;
+   color: #F9A826;
+   font-size: 20px;
+}
+
+.social-media a:hover{
+    color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+    .footer-signUp h4{
+        font-size: 15px;
+    }
+
+    .footer-signUp-btn{
+        padding: 2px 70px;
+        font-size: 13px;
+    }
+
+    .footer-link{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .footer-signUp{
+        margin-top: 30px;
+    }
+}

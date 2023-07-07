@@ -1,0 +1,95 @@
+.genres {
+  padding-top: 100px;
+}
+
+.genre-title {
+  color: #fff;
+}
+
+.genre-title span {
+  color: #f9a826;
+}
+
+.each-genre a{
+  text-decoration : none
+}
+
+.each-genre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  background: #000;
+  border-radius: 10px;
+  transition: all .6s ease ;
+  cursor: pointer;
+}
+
+.each-genre:hover{
+  transform: scale(1.05);
+}
+
+.genre-text {
+  --bg-size: 400%;
+  --color-one: hsl(15 90% 55%);
+  --color-two: #f9a826;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 8s infinite linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .genre-text {
+    animation: move-bg 8s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+
+@media only screen and (max-width:992px){
+  .genre-title{
+    font-size: 21px;
+  }
+
+  .genre-title span{
+    font-size: 25px;
+  }
+
+  .genre-text{
+    font-size: 18px;
+  }
+
+  .each-genre{
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width:576px){
+  .genre-title{
+    font-size: 19px;
+  }
+
+  .genre-title span{
+    font-size: 22px;
+  }
+
+  .genre-text{
+    font-size: 15px;
+  }
+
+  .each-genre{
+    height: 50px;
+  }
+}

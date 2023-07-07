@@ -1,0 +1,131 @@
+.contact{
+    background-image: url("../../assets/images/netflixteaser.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(101, 101, 101);
+    background-blend-mode: multiply;
+}
+
+.box
+{
+    border-radius: 10px;
+  margin: 0 auto;
+  padding: 2px;
+  background-color: #F9A826; /* gold */
+  /* Single pixel data uri image http://jsfiddle.net/LPxrT/ 
+  /* background-image: gold, gold, white */
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),  url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
+url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-repeat: no-repeat;
+  background-size: 0 2px, 0 100%, 0% 2px;
+  background-position: top center, top center, bottom center;
+  -webkit-animation: drawBorderFromCenter 4s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes drawBorderFromCenter {
+    0% {
+      background-size: 0 2px, 0 0, 100% 100%;
+    }
+    20% {
+      background-size: 100% 2px, 100% 0, 100% 100%;
+    }
+    66%
+    {
+      background-size: 100% 2px, 100% 98%, 100% 100%;
+    }
+    99%
+    {
+      background-size: 100% 2px, 100% 98%, 0 2px;
+    }
+}
+
+.content
+{
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.content h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin : 0
+}
+
+.emailArea h3{
+    color: #F9A826;
+    margin-bottom: 1.5rem;
+}
+
+.emailArea input,textarea,button{
+    width: 100%;
+}
+
+.emailArea input{
+    margin-bottom: 1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.emailArea input:focus,.emailArea textarea:focus{
+    box-shadow: 0 0 10px 1px #F9A826;
+}
+
+.emailArea textarea{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    height: 200px;
+}
+
+.emailArea button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    background: #F9A826;
+    border: none;
+    color: white;
+    transition: all .4s ease;
+}
+
+.emailArea button:hover , button:focus{
+    box-shadow: 0 10px 25px -5px white;
+}
+
+.socialMedia h3{
+    color: #F9A826;
+    margin-bottom: 30px;
+}
+
+.socialMedia a{
+    font-size: 50px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.4s ease;
+}
+
+.socialMedia a:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+.social-cols{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width : 768px){
+    .contact{
+        height : 100%
+    }
+
+    .content h2{
+        font-size : 18px
+    }
+}

@@ -1,0 +1,13 @@
+.home{
+    width: 100%;
+    height: 100%;
+    background-color: #2C394B;
+    padding-bottom: 50px;
+}
+
+.slider-container{
+    padding: 50px;
+    height: calc(100vh - 100px);
+}
+
+
